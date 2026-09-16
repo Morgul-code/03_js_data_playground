@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    charset="UTF-8"
+  >
+  <meta
+    name="description"
+    content="JS practice"
+  >
+  <link
+    rel="stylesheet"
+    href="./src/styles/style.css"
+  >
+  <title>JS Data Playground</title>
+</head>
+<body>
+<main>
+  <h1>Data Playground</h1>
+  <div
+    id="components"
+    class="components"
+  >
+    <div class="components__filters">
+      <div class="components__search">
+        <label for="search">
+          Search
+        </label>
+        <input
+          id="search"
+          name="search"
+          placeholder="type..."
+          type="text"
+        />
+      </div>
+      <div class="components__sort">
+        <label for="sort">Sort by</label>
+        <select
+          name="sort"
+          id="sort"
+          class="components__sort"
+        >
+          <option
+            value="name"
+            selected
+          >name
+          </option>
+          <option value="spend-asc">spend-asc</option>
+          <option value="spend-desc">spend-desc</option>
+        </select>
+      </div>
+      <div class="components__search">
+        <label for="min-spend">
+          Minimum Spend
+        </label>
+        <input
+          id="min-spend"
+          name="min-spend"
+          type="number"
+          min="0"
+          placeholder="0"
+        />
+      </div>
+    </div>
+    <section class="components__statistics">
+      <h2>Statistics</h2>
+      <div id="statistics"></div>
+    </section>
+
+    <section class="components__users">
+      <h2>Users</h2>
+      <div id="users"></div>
+    </section>
+
+    <section class="components__unique-products">
+      <h2>Unique products</h2>
+      <div id="unique-products"></div>
+    </section>
+  </div>
+</main>
+<script
+  type="module"
+  src="./src/scripts/index.js"
+></script>
+</body>
+</html>
