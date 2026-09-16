@@ -1,5 +1,19 @@
 import {users} from "./data.js";
-import {getAllOrders} from "./utils.js";
+import {
+  filterUsersByMinSpend,
+  getAllItems,
+  getAllOrders, getMostExpensiveItem,
+  getTotalRevenue, getUniqueProductNames,
+  getUserTotal, searchUsers, sortUsers
+} from "./utils.js";
 
 const orders = getAllOrders(users);
-console.log(orders)
+const items = getAllItems(users);
+// const userTotal = getUserTotal()
+const totalRevenue = getTotalRevenue(users)
+const mostExpensive = getMostExpensiveItem(users)
+const uniqueName = getUniqueProductNames(users)
+// filterUsersByMinSpend(users, 50000)
+// searchUsers(users, 'Mar')
+
+console.log(sortUsers(users, "spend-desc"))
