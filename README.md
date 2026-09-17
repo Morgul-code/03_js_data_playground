@@ -121,7 +121,6 @@ The main concepts practiced include:
     - `filter()`
     - `reduce()`
     - `flatMap()`
-    - `some()`
     - `toSorted()`
 - `Set`
 - nested data structures
@@ -149,6 +148,4 @@ Because the project uses ES Modules, running it through a local server is recomm
 
 ## Status
 
-Core functionality is complete.
-
-The project is currently undergoing final code review and cleanup.
+The project is complete.

@@ -44,7 +44,7 @@ export function renderStats(container, users) {
       <strong>
         ${mostExpensiveItem
     ? `${mostExpensiveItem.name} - ${mostExpensiveItem.price}`
-    : null}
+    : "No products"}
       </strong>
     </div>`
 }
