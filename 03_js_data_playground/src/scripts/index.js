@@ -6,6 +6,7 @@ import {
   getTotalRevenue, getUniqueProductNames,
   getUserTotal, searchUsers, sortUsers
 } from "./utils.js";
+import {renderStats, renderUniqueProducts, renderUsers} from "./render.js";
 
 const orders = getAllOrders(users);
 const items = getAllItems(users);
@@ -16,4 +17,4 @@ const uniqueName = getUniqueProductNames(users)
 // filterUsersByMinSpend(users, 50000)
 // searchUsers(users, 'Mar')
 
-console.log(sortUsers(users, "spend-desc"))
+console.log(renderUniqueProducts([], users))
